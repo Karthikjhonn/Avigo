@@ -1,10 +1,10 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-export default function NotFound() {
+export default function MyTickets() {
   return (
     <View>
-      <Text>page not found</Text>
+      <Text>MyTickets</Text>
     </View>
   )
 }
