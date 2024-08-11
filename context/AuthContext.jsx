@@ -6,7 +6,7 @@ const getUserData = async () => {
     const value = await AsyncStorage.getItem("user");
     if (value !== null) {
       console.log("Retrieved value:", value);
-      return value;
+      return JSON.parse(value)
     }
   } catch (error) {
     console.error("Failed to fetch data:", error);
@@ -21,12 +21,10 @@ export const AuthProvider = ({ children }) => {
     const fetchUserData = async () => {
       const isUser = await getUserData();
       setUser(isUser);
-      console.log(isUser);
       
     };
     fetchUserData();
   }, []);
-  console.log("Auth file");
 
   return (
     <AuthContext.Provider value={{ user, setUser }}>
