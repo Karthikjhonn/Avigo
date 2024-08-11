@@ -23,6 +23,22 @@ module.exports = {
           900: "#000000",
           950: "#000000",
         },
+        sand: {
+          50: "#FDFBF7",
+          100: "#FBF8EF",
+          200: "#F6EFDA",
+          300: "#F2E8CA",
+          400: "#EEE1B9",
+          500: "#E9D8A6",
+          600: "#DABD68",
+          700: "#C09C2F",
+          800: "#7F671F",
+          900: "#413510",
+          950: "#211B08",
+        },
+      },
+      fontFamily: {
+        allura: ["Allura",], // Register your custom font
       },
     },
   },
