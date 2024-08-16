@@ -4,6 +4,7 @@ import { SolidButton } from "../../../components/button/Button";
 import { SafeAreaView } from "react-native-safe-area-context";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { userAuth } from "../../../context/AuthContext";
+import { StatusBar } from "expo-status-bar";
 
 export default function Homepage() {
   const [userdetails, setUserDetails] = useState(null);
@@ -45,10 +46,11 @@ export default function Homepage() {
 
   return (
     <SafeAreaView className={"flex-1 justify-center items-center p-4"}>
+      <StatusBar style="dark" />
       <View className={"w-full"}>
         <Text>Homepage</Text>
         <Text>{userdetails?.Name}</Text>
-        <SolidButton onPress={signOut} title="Sign Out" />
+        
       </View>
     </SafeAreaView>
   );
