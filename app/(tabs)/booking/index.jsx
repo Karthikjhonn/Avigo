@@ -1,10 +1,16 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { View, Text,  ScrollView } from "react-native";
+import React from "react";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function BookingPage() {
   return (
-    <View>
-      <Text>MyBooking</Text>
-    </View>
-  )
+    <SafeAreaView>
+      <ScrollView>
+        <View className={"p-4 space-y-6"}>
+          <Text>MyBooking</Text>
+         
+        </View>
+      </ScrollView>
+    </SafeAreaView>
+  );
 }

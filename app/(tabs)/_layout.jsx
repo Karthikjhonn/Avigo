@@ -32,10 +32,13 @@ export default function TabNavigation() {
           paddingTop: 10,
           paddingBottom: 10,
           paddingHorizontal: 10,
-          borderTopWidth: 0,
+          borderTopWidth:.3,
           shadowOpacity: 0,
           elevation: 0,
+          borderColor:'#f7f7f7',
+          backgroundColor:'#FFF'
         },
+        headerShown:false
       }}
     >
       
