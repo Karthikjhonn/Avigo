@@ -7,6 +7,7 @@ import Page from "../../app/index";
 import TabNavigation from "../../app/(tabs)/_layout";
 import { CardStyleInterpolators } from "@react-navigation/stack";
 import { userAuth } from "@/context/AuthContext";
+import NotFound from "@/app/+not-found";
 export default function Layout() {
   const { user } = userAuth();
   return (
@@ -20,6 +21,7 @@ export default function Layout() {
       <Stack.Screen name="login/index" component={LoginPage} />
       <Stack.Screen name="register/index" component={Register} />
       <Stack.Screen name="(tabs)" component={TabNavigation} />
+      <Stack.Screen name="not-found" component={NotFound} />
     </Stack.Navigator>
   );
 }

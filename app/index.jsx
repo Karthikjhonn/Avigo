@@ -21,7 +21,7 @@ export default function Page() {
       } else {
         router.replace("/login");
       }
-    }, 2000);
+    }, 200);
 
     return () => clearTimeout(timer);
   }, [user, router, setUser]);
