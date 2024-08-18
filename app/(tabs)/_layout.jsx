@@ -7,7 +7,7 @@ import Ionicons from "@expo/vector-icons/Ionicons";
 import FontAwesome6 from "@expo/vector-icons/FontAwesome6";
 
 import Homepage from "./home/index";
-import BookingPage from "./booking/index";
+import FlightStack from "./booking/_layout";
 import TicketPage from "./myticket/index";
 import SupportPage from "./support/index";
 import ProfilePage from "./profile/index";
@@ -53,8 +53,8 @@ export default function TabNavigation() {
         }}
       />
       <Tab.Screen
-        name="booking"
-        component={BookingPage}
+        name="FlightStack"
+        component={FlightStack}
         options={{
           title: "Search",
           tabBarIcon: ({ color }) => (

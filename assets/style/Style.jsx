@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
   solidBtn: {
     backgroundColor: "#000",
     color: "#ffffff",
-    minHeight: 50,
+    minHeight: 58,
     borderRadius: 12,
   },
   input: {
